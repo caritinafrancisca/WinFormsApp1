@@ -30,5 +30,23 @@ namespace WinFormsApp1
             }
 
         }
-    }    
+
+        private void btnSalvarComo_Click(object sender, EventArgs e)
+        {
+            //se o retorno do método ShowDialog() for ok
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //declaração da variável que vai salvar o arquivo
+                StreamWriter Arq = new StreamWriter(saveFileDialog1.FileName);
+                //Para cada linha no TexBox
+                foreach (string s in textBox1.Lines)
+                {
+                    //escreve uma linha no arquivo
+                    Arq.WriteLine(s);
+                }
+                //fecha o arquivo
+                Arq.Close();
+            }
+        }
+    }
 }

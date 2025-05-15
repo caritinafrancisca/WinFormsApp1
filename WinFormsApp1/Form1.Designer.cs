@@ -51,7 +51,7 @@
             btnSalvarComo.TabIndex = 1;
             btnSalvarComo.Text = "Salvar Como...";
             btnSalvarComo.UseVisualStyleBackColor = true;
-          //  btnSalvarComo.Click += bbtnAbrirArquivo_Click;
+            btnSalvarComo.Click += btnSalvarComo_Click;
             // 
             // btnAbrirArquivo
             // 
