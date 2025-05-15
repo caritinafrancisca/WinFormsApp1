@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
-            bbtnAbrirArquivo = new Button();
-            button1 = new Button();
+            btnSalvarComo = new Button();
+            btnAbrirArquivo = new Button();
             openFileDialog1 = new OpenFileDialog();
             saveFileDialog1 = new SaveFileDialog();
             SuspendLayout();
@@ -43,25 +43,25 @@
             textBox1.Size = new Size(591, 325);
             textBox1.TabIndex = 0;
             // 
-            // bbtnAbrirArquivo
+            // btnSalvarComo
             // 
-            bbtnAbrirArquivo.Location = new Point(311, 41);
-            bbtnAbrirArquivo.Name = "bbtnAbrirArquivo";
-            bbtnAbrirArquivo.Size = new Size(115, 23);
-            bbtnAbrirArquivo.TabIndex = 1;
-            bbtnAbrirArquivo.Text = "Salvar Como...";
-            bbtnAbrirArquivo.UseVisualStyleBackColor = true;
-            bbtnAbrirArquivo.Click += bbtnAbrirArquivo_Click;
+            btnSalvarComo.Location = new Point(311, 41);
+            btnSalvarComo.Name = "btnSalvarComo";
+            btnSalvarComo.Size = new Size(115, 23);
+            btnSalvarComo.TabIndex = 1;
+            btnSalvarComo.Text = "Salvar Como...";
+            btnSalvarComo.UseVisualStyleBackColor = true;
+          //  btnSalvarComo.Click += bbtnAbrirArquivo_Click;
             // 
-            // button1
+            // btnAbrirArquivo
             // 
-            button1.Location = new Point(104, 41);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Abrir arquivo...";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnAbrirArquivo.Location = new Point(104, 41);
+            btnAbrirArquivo.Name = "btnAbrirArquivo";
+            btnAbrirArquivo.Size = new Size(139, 23);
+            btnAbrirArquivo.TabIndex = 1;
+            btnAbrirArquivo.Text = "Abrir arquivo...";
+            btnAbrirArquivo.UseVisualStyleBackColor = true;
+            btnAbrirArquivo.Click += button1_Click;
             // 
             // openFileDialog1
             // 
@@ -72,8 +72,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(bbtnAbrirArquivo);
+            Controls.Add(btnAbrirArquivo);
+            Controls.Add(btnSalvarComo);
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
@@ -85,8 +85,8 @@
         #endregion
 
         private TextBox textBox1;
-        private Button bbtnAbrirArquivo;
-        private Button button1;
+        private Button btnSalvarComo;
+        private Button btnAbrirArquivo;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
     }
